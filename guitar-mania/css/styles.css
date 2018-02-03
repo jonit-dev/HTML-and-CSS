@@ -1,0 +1,335 @@
+/* ------------------------------------------------------------|
+| STRUCTURING ELEMENTS
+*-------------------------------------------------------------*/
+
+body {
+
+}
+
+.wrapper {
+    margin: 0 2%;
+}
+
+
+/* ------------------------------------------------------------|
+| TYPOGRAPHY
+*-------------------------------------------------------------*/
+
+h1, h2 {
+    font-family: oswald, sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    color: white;
+    background-color: #000;
+    margin-top: 0;
+    padding-top: 3rem;
+    text-align: center;
+
+     border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: .75rem;
+    margin-top: 2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-family: "Roboto Slab", georgia, serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: .75rem;
+    color:black;
+}
+
+
+a {
+    font-family: "Roboto Slab", serif;
+}
+
+/* ------------------------------------------------------------|
+| IMAGES
+*-------------------------------------------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.guitar-small img {
+    border: 1px solid #888; /*For design, not for responsiveness. */
+}
+
+
+/* ------------------------------------------------------------|
+| HEADER
+*-------------------------------------------------------------*/
+
+/* MENU and LINKS =========================================== */
+a {
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav a {
+    font-size: 1.4rem;
+    line-height: 2;
+    display: block;
+    color:black;
+}
+nav li {
+    background-color: #ccc;
+    border: 1px solid white;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------|
+| FEATURED
+*-------------------------------------------------------------*/
+
+
+.featured {
+
+    margin-top:.3rem;
+    font-size:1rem;
+    font-weight: bolder;
+    color:black;
+
+
+}
+
+.guitar-small a {
+
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.img-featured {
+
+    border-style: none !important;
+}
+
+.p-featured {
+    font-family: "Roboto Slab", serif;
+    font-size:.9rem;
+}
+
+
+
+/* ------------------------------------------------------------|
+| SUBSCRIBE
+*-------------------------------------------------------------*/
+
+
+
+h4 {
+    font-family: "Roboto Slab", georgia, serif;
+    font-weight: bolder;
+    margin: 0;
+    font-size: 1rem;
+    color:black;
+    margin-bottom: .8rem;
+}
+.subscribe form label {
+    width:100%;
+    display:block;
+}
+
+.subscribe form label + input {
+    width:100%;
+    display:block;
+    margin-bottom: .5rem;
+}
+
+.comments {
+    width: 100%;
+    height:5rem;
+}
+
+.subscribe form input[type=submit]{
+
+    width:100%;
+    border: 1px silver solid;
+    text-align: center;
+
+    border-radius: .2rem;
+    background-color:white;
+
+    font-family: "Roboto Slab", georgia, serif;
+    font-weight: 400;
+
+    margin-top:.3rem;
+
+}
+
+
+/* ------------------------------------------------------------|
+| FOOTER
+*-------------------------------------------------------------*/
+
+footer {
+    padding-top: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    font-size:.8rem;
+}
+
+/* ------------------------------------------------------------|
+| MOBILE FIRST STRUCTURES - MEDIA QUERIES
+*-------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+    h2, .guitar-small {
+        margin: 1%;
+        width: 23%;
+        float: left;
+    }
+} /* end 700px min query */
+
+
+/*MOBILE ONLY CODE*/
+@media screen and (max-width: 700px) {
+
+    .desktopOnly {
+        display: none;
+    }
+
+
+}
+
+/*DESKTOP ONLY CODE*/
+
+@media screen and (min-width: 700px) {
+
+    .mobileOnly {
+        display: none;
+    }
+
+}
+
+
+/* DESKTOP =========================================== */
+
+
+@media screen and (min-width: 700px) {
+
+    /* WRAPPER =========================================== */
+
+    .wrapper{
+        padding-left:4rem;
+        padding-right: 4rem;
+    }
+
+
+    /* MENU and LINKS =========================================== */
+
+
+    h1 {
+        width:20%;
+
+        margin-left:79.6%;
+        font-weight: 400;
+        color: white;
+        background-color: #000;
+        margin-top: 0;
+        padding-top: 3rem;
+        text-align: center;
+
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+    }
+
+    /* MENU =========================================== */
+
+    nav {
+        padding-left:.4rem;
+        margin-left:1.9rem;
+        min-width: 97.7%;
+
+    }
+
+    nav ul {
+      min-width: 100%;
+        display: flex;
+
+
+    }
+
+    nav li {
+        width:16.66%;
+        background-color: #ccc;
+        border: 1px solid white;
+        margin-right: 1rem;
+
+
+    }
+
+    nav li a {
+
+    }
+
+
+    /* FEATURED AND CONTACT FORM =========================================== */
+
+
+     /*DESKTOP ONLY CODE*/
+
+     @media screen and (min-width: 500px) {
+
+         .end-sections-wrapper {
+             display: flex;
+         }
+
+         .featured-desktop-section {;
+
+             min-width:76%;
+             height:auto;
+
+             float:left;
+
+         }
+
+         .featured-desktop-section .guitar-small {
+             width: 100%;
+         }
+
+         footer {
+             min-width: 100%;
+             height: auto;
+         }
+
+         .subscribe-desktop-section {
+             min-width:24%;
+             display: inline-block;
+             float:left;
+
+
+         }
+
+     }
+
+
+
+
+
+} /* end 700px min query */
